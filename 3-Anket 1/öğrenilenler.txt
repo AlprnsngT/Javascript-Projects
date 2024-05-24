@@ -1,0 +1,38 @@
+************* ANIMATION ***********
+
+### class ekleme - kaldırma
+result.classList.remove("d-none");
+
+/*
+ * setTimeOut
+ * callBack function tanımlanır
+ * akabinde süre belirtilir
+ * mili saniye
+ * */
+
+/*
+setTimeout(() => {
+    console.log("alperen")
+},2000);
+*/
+
+/*
+ * setInterval
+ * setTimeOuttan farkı belirlenen süre zarfında
+ * sürekli çalışır
+ * setInterval fonksiyonu bir değişkene ata
+ * durdurmak için clearInterval(değişken) kullanılır
+ *
+ */
+
+/*
+let i = 0 ;
+const interval = setInterval(()=>{
+    console.log("songut")
+    i++;
+    if(i == 4){
+        clearInterval(interval);
+    }
+},1000);
+*/
+

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: purple;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: lightpink;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+}
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 200px;
+    border-radius: 20px;
+    resize: none;
+    padding: 10px;
+}
+.countContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.container p{
+    font-size: 18px;
+}
+.container .totalChar{
+    color: red;
+}
+.container .remainingChar{
+    color: blue;
+}

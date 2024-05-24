@@ -1,0 +1,38 @@
+body {
+    background-color: #c86363;
+}
+
+/* placeholdere css verebilmek için :: kullanmamız gerekiyor */
+::placeholder {
+    /* arka planı ezebilmek için !important kullanmalıyız */
+    color: white !important;
+}
+
+.container {
+    max-width: 400px;
+}
+
+/* girilen inputları düzeltelim 
+focus yazmamızın sebebi tıkladığımızda değişiklik olmaması
+*/
+input[type=text],
+input[type=text]:focus {
+    color: white;
+    border: none;
+    background-color: rgb(171, 141, 141);
+    /* container de hallettik buna gerek yok max-width: 400px; */
+}
+
+.todos li {
+    background-color: #D87E7E;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+/* filtreleme işlemi sonucu eleman yoksa 
+ekranda gözükmesin */
+.filtered {
+    display: none !important;
+}

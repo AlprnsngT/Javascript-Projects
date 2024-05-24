@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    position: fixed;
+    /* istediğim yere elle konumlandırma */
+    right: 25px;
+    top: 25px;
+    font-size: 28px;
+    color: orange;
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: white;
+    width: 500px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* kaydırma işlemi transform ile yapılıyor js de buna erişicez */
+    transform: translate(-100%);
+    /* açılıp kapanma için animasyon eklemeyi transition */
+    transition: 1.3s;
+}
+
+.sidebarHeader {
+    text-align: right;
+    padding: 16px;
+    font-size: 24px;
+}
+.fa-xmark:hover {
+    color: orange;
+    cursor: pointer;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    color: grey;
+    padding: 16px 24px;
+    font-size: 28px;
+}
+.menu a:hover {
+    background-color: orange;
+    padding-left: 40px;
+}
+
+.showSidebar{
+    transform: translate(0%);
+}

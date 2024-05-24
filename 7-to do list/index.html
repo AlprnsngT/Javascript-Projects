@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        * bir todoApp sitesi yapalım
+        * listeye eleman ekleme için label olsun
+        * listeden elemanı silmek için trash iconuna basıca silinsin
+        * search labeli olsun ve canlı arama yapabilsin
+        * yani her harf yazdıkça alt tarafta eşleşenleri göstersin
+    -->
+    <div class="container">
+        <header class="text-center text light my-4">
+            <!-- margin bottom 4 -->
+            <h1 class="mb-4"> ToDo App</h1>
+            <form class="search">
+                <!-- form-controlü bootstrap veriyor -->
+                <input class="form-control" type="text" name="search" placeholder="Ara...">
+            </form>
+        </header>
+        <!--
+            todos bize ait
+            d-flex satırı bütün alıyoruz
+            justify-content-between ile aynı satırdaki farklı etiketler arasını açıyoruz 
+        -->
+        <ul class="list-group text-light todos">
+            <li class="list-group-item d-flex justify-content-between align-items:center">
+                <span>Yüzmeye git</span>
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items:center">
+                <span>Limon Al</span>
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items:center">
+                <span>Manava git</span>
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items:center">
+                <span>Okula git</span>
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+        </ul>
+        <!-- add bize ait -->
+        <form class="text-center my-4 add">
+            <label class="text-light">Yeni İş Ekle</label>
+            <input class="form-control m-auto" type="text" name="add">
+        </form>
+
+    </div>
+    <script src="https://kit.fontawesome.com/ab2ccb6ee8.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
